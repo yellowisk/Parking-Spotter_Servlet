@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="./carlist.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class=""><a href="../webapp/index.html">Home</a>
+            <li class="dropdown-pl">
+                <a href="">Parking Lot</a>
+
+                <div class="dropdown-menu-pl">
+                    <a href="../parkinglot.html">Register</a>
+                    <a href="">Manage</a>
+                </div>
+            </li>
+            <li class="dropdown-ps">
+                <a href="">Parking Spot</a>
+                
+                <div class="dropdown-menu-ps">
+                    <a href="../parkingspot.html">Register</a>
+                    <a href="">Manage</a>
+                </div>
+            </li>
+            <li class="dropdown-c">
+                <a href="">Car</a>
+
+                <div class="dropdown-menu-c">
+                    <a href="../car.html">Register</a>
+                    <a href="">Manage</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="info-master">
+            <div class="title"><big>M</big><small>anage your cars</small></div>
+            <form action="" style="align-self: center;">
+                <label for="cars">Find a car:</label>
+                
+                    <select style="width: 30%;" name="cars" id="cars">
+                        <option value="All">All cars</option>
+                        <option value="ByLot">By ParkingLot</option>
+                        <option value="ByLicensePlate">By License Plate</option>
+                    </select>
+                    <input type="submit" value="Submit">
+            </form>    
+        </div>
+        <div class="content">
+            <table id="cars">
+                <tr>
+                    <th>License Plate</th>
+                    <th>Parking Lot</th>
+                    <th>Brand</th>
+                    <th>Color</th>
+                    <th>Owner</th>
+                    <th>Location</th>
+                    <th class="action" colspan="2">Action</th>
+                </tr>
+                <tbody>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><i id="edit" class='bx bx-edit-alt'></i></td>
+                    <td><i id="delete" class='bx bxs-trash'></i></td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="../javascript/navbar.js"></script>
+</html>

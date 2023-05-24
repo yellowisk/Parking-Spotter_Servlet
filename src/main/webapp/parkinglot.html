@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/parkinglot.css" />
+    <title>Create Parking Lot</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class=""><a href="../webapp/index.html">Home</a>
+            <li class="dropdown-pl">
+                <a href="">Parking Lot</a>
+
+                <div class="dropdown-menu-pl">
+                    <a href="../webapp/parkinglot.html">Register</a>
+                    <a href="">Manage</a>
+                </div>
+            </li>
+            <li class="dropdown-ps">
+                <a href="">Parking Spot</a>
+                
+                <div class="dropdown-menu-ps">
+                    <a href="../webapp/parkingspot.html">Register</a>
+                    <a href="">Manage</a>
+                </div>
+            </li>
+            <li class="dropdown-c">
+                <a href="">Car</a>
+
+                <div class="dropdown-menu-c">
+                    <a href="../webapp/car.html">Register</a>
+                    <a href="./RUD/carlist.html">Manage</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="title"><big>R</big><small>egister your parking lot</small></div>
+        <div class="content">
+            <form action="parkingLots">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Name</span>
+                        <input type="text" placeholder="Enter the parking lot name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Maximum capacity</span>
+                        <input type="text" placeholder="Enter its maximum capacity" required>
+                    </div>
+                </div>
+                <input type="hidden" id="id" name="id"/>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./javascript/navbar.js"></script>
+</body>
+
+</html>
